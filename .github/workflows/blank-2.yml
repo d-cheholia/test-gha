@@ -75,5 +75,7 @@ jobs:
           --data-urlencode "text=$TEXT" --data-urlencode "parse_mode=HTML" $URL
         fi
 
+        echo "changed"
+
       env:
         URL: https://api.telegram.org/bot${{ secrets.TEST }}/sendMessage
